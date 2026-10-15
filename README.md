@@ -1,6 +1,7 @@
 # Freight Watch: shipping-cost assistant (JavaScript / React)
 
 **Live demo:** https://freight-tiger-assignment-nmvl.vercel.app/
+
 **Source repository:** https://github.com/ishika74/FreightTiger-assignment
 
 Watches cost per tonne-km for every route, week by week. It flags weeks where cost is rising and looks out of the
