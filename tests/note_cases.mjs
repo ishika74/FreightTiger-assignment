@@ -1,0 +1,26 @@
+// Hand-labelled "does this note say freight costs went UP?" cases. The first 10 are the supplied notes; the rest are
+// new phrasings written to stress the rule parser (dangerous errors = says UP when the note does not).
+export const CASES = [
+  ['Heavy flooding disrupted truck movement from Feb 24 to Mar 8, forcing detours and higher trip costs.', true],
+  ['A regional festival week saw a temporary surcharge applied by transporters on the corridor.', true],
+  ['Diesel prices rose nationwide starting this week, pushing up transportation costs across all routes by roughly 5-7%.', true],
+  ['A new toll plaza was commissioned, but the affected routes are not part of this dataset.', false],
+  ['Highway maintenance caused minor delays for about a week; costs were not significantly affected.', false],
+  ['Industry report: demand for freight capacity remained stable with no major disruptions.', false],
+  ['Local authorities announced improved road conditions after resurfacing was completed.', false],
+  ['No significant disruptions were reported on the corridor; freight movement remained normal.', false],
+  ['The route returned to normal conditions after flood-related repairs were completed.', false],
+  ['A vehicle tracking mandate was introduced; compliance costs were absorbed by transporters without a rate change.', false],
+  ['Transporters hiked rates on the lane by 8% this week.', true],
+  ['A fuel levy was imposed on all carriers starting this week.', true],
+  ['Truck availability tightened and spot rates jumped on the corridor.', true],
+  ['Carriers passed on the new tax, increasing per-tonne charges by roughly 4-6%.', true],
+  ['A strike by truckers pushed rates up across the region.', true],
+  ['Monsoon rains caused higher trip costs for two weeks on the corridor.', true],
+  ['Costs were unaffected despite the road closure.', false],
+  ['Freight rates eased slightly after the festival.', false],
+  ['Toll on the expressway was reduced, lowering costs for carriers.', false],
+  ['Higher costs were not seen this week; rates stayed flat.', false],
+  ['A surcharge was announced but withdrawn before it took effect.', false],
+  ['Costs rose sharply even though no disruption was reported.', true],
+]

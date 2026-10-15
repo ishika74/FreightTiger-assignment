@@ -1,0 +1,26 @@
+{
+  "name": "freight-watch",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pipeline": "node scripts/run.mjs",
+    "test": "node --test tests/core.test.mjs tests/guardrails.test.mjs tests/retrieval.test.mjs tests/llm.test.mjs",
+    "eval": "node tests/eval.mjs",
+    "repro": "node scripts/repro.mjs",
+    "parity": "node scripts/parity.mjs",
+    "all": "npm run pipeline && npm test && npm run eval && npm run repro",
+    "ask": "node scripts/ask.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}

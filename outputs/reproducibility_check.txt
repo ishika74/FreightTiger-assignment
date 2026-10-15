@@ -1,0 +1,11 @@
+Reproducibility check: 3 runs, each a fresh `node` process
+
+d19a5d07b76b9851ed1f3265e9df3603892a50055607ed965f7a6fcbe5b3bc98  run1/output.csv
+990d31503424ffd9f7b02c1653c845a38e598fff9db79b504c6f81ad02b01e32  run1/weekly_metrics.csv
+d19a5d07b76b9851ed1f3265e9df3603892a50055607ed965f7a6fcbe5b3bc98  run2/output.csv
+990d31503424ffd9f7b02c1653c845a38e598fff9db79b504c6f81ad02b01e32  run2/weekly_metrics.csv
+d19a5d07b76b9851ed1f3265e9df3603892a50055607ed965f7a6fcbe5b3bc98  run3/output.csv
+990d31503424ffd9f7b02c1653c845a38e598fff9db79b504c6f81ad02b01e32  run3/weekly_metrics.csv
+
+output.csv: run1 == run2 == run3 (byte-identical, including reason text)
+weekly_metrics.csv: run1 == run2 == run3 (byte-identical, including reason text)
