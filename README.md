@@ -1,4 +1,4 @@
-# Freight Watch: shipping-cost assistant (JavaScript / React)
+# Freight Watch: shipping-cost assistant
 
 **Live demo:** https://freight-tiger-assignment-nmvl.vercel.app/
 
