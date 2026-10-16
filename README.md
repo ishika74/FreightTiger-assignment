@@ -1,3 +1,5 @@
+# Freight Tiger: shipping-cost assistant
+
 **Live demo:** https://freight-tiger-assignment.vercel.app/  
 **Source repository:** https://github.com/ishika74/FreightTiger-assignment
 
