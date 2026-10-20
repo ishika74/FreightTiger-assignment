@@ -8,20 +8,20 @@ ordinary, then checks the notes for a real reason. **A rise counts as "justified
 deterministic check; otherwise it is reported as unexplained.** The numeric pipeline and verdict gate are deterministic JavaScript. The CLI can optionally use an OpenAI-compatible LLM to rewrite explanations for already-verified, justified rows; the LLM cannot alter metrics, flags, or matched note IDs. The browser demo remains offline.
 
 ```bash
-npm install                # only needed for the web app (react, vite)
-npm run pipeline           # -> outputs/output.csv + weekly_metrics.csv + token_cost_log.md
+npm.cmd install                # only needed for the web app (react, vite)
+npm.cmd run pipeline           # -> outputs/output.csv + weekly_metrics.csv + token_cost_log.md
 # Optional LLM-written explanations (set OPENAI_API_KEY first):
 # macOS/Linux: export OPENAI_API_KEY="..." && npm run pipeline
 # PowerShell: $env:OPENAI_API_KEY="..."; npm run pipeline
 # Optional: set OPENAI_MODEL (default gpt-4o-mini) and OPENAI_BASE_URL
-npm test                   # 18 tests (Node's built-in runner, no install needed)
-npm run eval               # labelled-set + injection eval -> outputs/eval_report.md
-npm run repro              # 3 fresh runs, byte-compared -> outputs/reproducibility_check.txt
-npm run all                # all four above in order
+npm.cmd test                   # 18 tests (Node's built-in runner, no install needed)
+npm.cmd run eval               # labelled-set + injection eval -> outputs/eval_report.md
+npm.cmd run repro              # 3 fresh runs, byte-compared -> outputs/reproducibility_check.txt
+npm.cmd run all                # all four above in order
 node scripts/ask.mjs "why did Chennai-Bangalore get pricier in March?"   # ask about the findings
-npm run dev                # React web app at http://localhost:5173 (click "Use sample data")
-npm run build              # static site in dist/
-npm run parity             # JS output vs the Python version's output (data/python_output.csv)
+npm.cmd run dev                # React web app at http://localhost:5173 (click "Use sample data")
+npm.cmd run build              # static site in dist/
+npm.cmd run parity             # JS output vs the Python version's output (data/python_output.csv)
 ```
 Requires Node 18+ (developed on Node 22). `pipeline`, `test`, `eval` and `repro` need no `npm install`.
 
