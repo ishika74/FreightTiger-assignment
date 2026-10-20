@@ -151,4 +151,4 @@ These checks increase confidence but do not guarantee that unfamiliar real-world
 ## Live deployment
 
 
-For the Vite app, the production build command is `npm run build` and the output directory is `dist`. After pushing changes to the connected GitHub repository, Vercel can build and deploy the updated version.
+For the Vite app, the production build command is `npm.cmd run build` and the output directory is `dist`. After pushing changes to the connected GitHub repository, Vercel can build and deploy the updated version.
